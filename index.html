@@ -18,6 +18,8 @@
   <!-- AOS for animations -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preload" as="image" href="assets/hero-2.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/hero-mobile.webp" fetchpriority="high">
   <link rel="stylesheet" href="assets/style.css?v=2">
 </head>
 
@@ -117,7 +119,7 @@
               <b>Conta</b>: 112895-7</p>
           </div>
           <div class="col-sm" style="text-align: center;">
-            <img src="assets/qr-code-pix.jpeg" alt="Código QR do Pix" class="border rounded-5" style="max-width: 300px;">
+            <img src="assets/qr-code-pix.jpeg" alt="Código QR do Pix" class="border rounded-5" style="max-width: 300px;" loading="lazy">
           </div>
         </div>
       </div>
@@ -135,7 +137,7 @@
             <div class="mySlides">
               <div class="numbertext">1 / 9</div>
               <div class="slideContent">
-                <img src="assets/rafael-com-papagaio.webp" alt="Rafael com papagaio" style="height: 500px">
+                <img src="assets/rafael-com-papagaio.webp" alt="Rafael com papagaio" style="height: 500px" loading="lazy">
               </div>
               <div class="text">Rafael sempre soube viver</div>
             </div>
@@ -143,7 +145,7 @@
             <div class="mySlides">
               <div class="numbertext">2 / 9</div>
               <div class="slideContent">
-                <img src="assets/rafael-com-noiva.webp" alt="Rafael com noiva" style="height: 500px">
+                <img src="assets/rafael-com-noiva.webp" alt="Rafael com noiva" style="height: 500px" loading="lazy">
               </div>
               <div class="text">Aprender a viver é um caminho.<br>Ter amigos é o que dá sentido a ele</div>
             </div>
@@ -151,7 +153,7 @@
             <div class="mySlides">
               <div class="numbertext">3 / 9</div>
               <div class="slideContent">
-                <img src="assets/rafael-sorrindo.webp" alt="Rafael sorrindo" style="height: 500px">
+                <img src="assets/rafael-sorrindo.webp" alt="Rafael sorrindo" style="height: 500px" loading="lazy">
               </div>
               <div class="text">A alegria fazia parte do dia a dia</div>
             </div>
@@ -159,7 +161,7 @@
             <div class="mySlides">
               <div class="numbertext">4 / 9</div>
               <div class="slideContent">
-                <img src="assets/ultima-mensagem-familia.webp" alt="Conversa de WhatsApp" style="height: 500px">
+                <img src="assets/ultima-mensagem-familia.webp" alt="Conversa de WhatsApp" style="height: 500px" loading="lazy">
               </div>
               <div class="text">Antes de tudo, Rafael sempre foi amor<br>(Últimas mensagens para a família)</div>
             </div>
@@ -167,7 +169,7 @@
             <div class="mySlides">
               <div class="numbertext">5 / 9</div>
               <div class="slideContent">
-                <img src="assets/rafael-e-esposa-no-hospital.webp" alt="Rafael e esposa no hospital" style="height: 500px">
+                <img src="assets/rafael-e-esposa-no-hospital.webp" alt="Rafael e esposa no hospital" style="height: 500px" loading="lazy">
               </div>
               <div class="text">Em julho de 2025 a vida mudou de repente</div>
             </div>
@@ -175,7 +177,7 @@
             <div class="mySlides">
               <div class="numbertext">6 / 9</div>
               <div class="slideContent">
-                <img src="assets/rafael-intubado.webp" alt="Rafael intubado" style="height: 500px">
+                <img src="assets/rafael-intubado.webp" alt="Rafael intubado" style="height: 500px" loading="lazy">
               </div>
               <div class="text">Rafael sofreu um AVC grave nas Filipinas</div>
             </div>
@@ -183,7 +185,7 @@
             <div class="mySlides">
               <div class="numbertext">7 / 9</div>
               <div class="slideContent">
-                <img src="assets/rafael-no-hospital.webp" alt="Rafael no hospital" style="height: 500px">
+                <img src="assets/rafael-no-hospital.webp" alt="Rafael no hospital" style="height: 500px" loading="lazy">
               </div>
               <div class="text">Ele precisa voltar para casa para continuar lutando</div>
             </div>
@@ -191,7 +193,7 @@
             <div class="mySlides">
               <div class="numbertext">8 / 9</div>
               <div class="slideContent">
-                <img src="assets/rafael-acordado.webp" alt="Rafael acordado" style="height: 500px">
+                <img src="assets/rafael-acordado.webp" alt="Rafael acordado" style="height: 500px" loading="lazy">
               </div>
               <div class="text">Toda ajuda é um passo de volta ao Brasil</div>
             </div>
@@ -199,10 +201,16 @@
             <div class="mySlides">
               <div class="numbertext">9 / 9</div>
               <div class="slideContent">
-                <video height="500" class="w-100" controls>
+                <!-- <video height="500" class="w-100" controls>
                   <source src="assets/primeiras-reacoes.mp4" type="video/mp4">
                   Seu navegador não suporta a tag de vídeo.
-                </video>
+                </video> -->
+                <iframe src="https://www.youtube.com/embed/Q1S2xw-Y7Cs?si=VFLmChaE0Hxf6eSw" 
+                  style="width: 100%; max-width: 560px;" height="500"
+                  title="YouTube video player" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
               </div>
               <div class="text">Primeiras reações depois do AVC</div>
             </div>
@@ -263,25 +271,25 @@
       <div class="container">
         <h2 class="section-title text-center">Propostas Comerciais</h2>
         <div class="row overflow-y-auto border" style="height: 500px;">
-          <a href="assets/Proposta_COMERCIAL_Air ambulance_from_Cebu_City_Philippines_to_Fortaleza_Brazil.pdf" target="_blank">
-            <img src="assets/proposta1-0.png" alt="Proposta comercial" class="w-100">
-            <img src="assets/proposta1-1.png" alt="Proposta comercial" class="w-100">
-            <img src="assets/proposta1-2.png" alt="Proposta comercial" class="w-100">
-            <img src="assets/proposta1-3.png" alt="Proposta comercial" class="w-100">
+          <a href="assets/Proposta_COMERCIAL_Air ambulance_from_Cebu_City_Philippines_to_Fortaleza_Brazil.pdf" target="_blank" title="Clique para ver o PDF do documento original">
+            <img src="assets/proposta1-0.webp" alt="Proposta comercial 1.1" class="w-100" loading="lazy">
+            <img src="assets/proposta1-1.webp" alt="Proposta comercial 1.2" class="w-100" loading="lazy">
+            <img src="assets/proposta1-2.webp" alt="Proposta comercial 1.3" class="w-100" loading="lazy">
+            <img src="assets/proposta1-3.webp" alt="Proposta comercial 1.4" class="w-100" loading="lazy">
           </a>
         </div>
         <hr>
         <div class="row overflow-y-auto border" style="height: 500px;">
-          <a href="assets/Proposta_Comercial_125065 _ Brasil_Vida.pdf" target="_blank">
-            <img src="assets/proposta2-0.png" alt="Proposta comercial" class="w-100">
-            <img src="assets/proposta2-1.png" alt="Proposta comercial" class="w-100">
-            <img src="assets/proposta2-2.png" alt="Proposta comercial" class="w-100">
+          <a href="assets/Proposta_Comercial_125065 _ Brasil_Vida.pdf" target="_blank" title="Clique para ver o PDF do documento original">
+            <img src="assets/proposta2-0.webp" alt="Proposta comercial 2.1" class="w-100" loading="lazy">
+            <img src="assets/proposta2-1.webp" alt="Proposta comercial 2.2" class="w-100" loading="lazy">
+            <img src="assets/proposta2-2.webp" alt="Proposta comercial 2.3" class="w-100" loading="lazy">
           </a>
         </div>
         <hr>
         <div class="row overflow-y-auto border" style="max-height: 500px;">
-          <a href="assets/negativa-de-voo-comercial.webp" target="_blank">
-            <img src="assets/negativa-de-voo-comercial.webp" alt="Proposta comercial" class="w-100">
+          <a href="assets/negativa-de-voo-comercial.webp" target="_blank" title="Clique para expandir a imagem">
+            <img src="assets/negativa-de-voo-comercial.webp" alt="Proposta comercial 3" class="w-100" loading="lazy">
           </a>
         </div>
       </div>
@@ -292,8 +300,8 @@
       <div class="container">
         <h2 class="section-title text-center">Declaração Pública de Finalidade</h2>
         <div class="overflow-y-auto" style="height: 500px;">
-          <a href="assets/declaracao-publica-de-finalidade.pdf" target="_blank">
-            <img src="assets/declaracao.webp" alt="Declaração Pública de Finalidade" class="w-100">
+          <a href="assets/declaracao-publica-de-finalidade.pdf" target="_blank" title="Clique para ver o PDF do documento original">
+            <img src="assets/declaracao.webp" alt="Declaração Pública de Finalidade" class="w-100" loading="lazy">
           </a>
         </div>
       </div>
@@ -311,7 +319,7 @@
           <div class="col-sm mb-3">
             <div>
               <div class="div-contato">
-                <a href="https://wa.me/5521981746179" target="_blank" class="text-decoration-none">
+                <a href="https://wa.me/5521981746179" target="_blank" class="text-decoration-none" title="WhatsApp">
                   <div class="d-flex">
                     <div>
                       <button type="button" class="btn btn-contato bg-gradient shadow">
@@ -327,7 +335,7 @@
               </div>
 
               <div class="div-contato">
-                <a href="mailto:voltarafaelbr@gmail.com" class="text-muted text-decoration-none">
+                <a href="mailto:voltarafaelbr@gmail.com" class="text-muted text-decoration-none" title="E-mail">
                   <div class="d-flex">
                     <div>
                       <button type="button" class="btn btn-contato bg-gradient shadow">
@@ -346,7 +354,7 @@
           <div class="col-sm">
             <div>
               <div class="div-contato">
-                <a href="https://www.facebook.com/voltarafael" target="_blank" class="text-decoration-none">
+                <a href="https://www.facebook.com/voltarafael" target="_blank" class="text-decoration-none" title="Facebook">
                   <div class="d-flex">
                     <div>
                       <button type="button" class="btn btn-contato bg-gradient shadow">
@@ -362,7 +370,7 @@
               </div>
 
               <div class="div-contato">
-                <a href="https://www.instagram.com/voltarafaelbr" target="_blank" class="text-decoration-none">
+                <a href="https://www.instagram.com/voltarafaelbr" target="_blank" class="text-decoration-none" title="Instagram">
                   <div class="d-flex">
                     <div>
                       <button type="button" class="btn btn-contato bg-gradient shadow">
@@ -381,7 +389,7 @@
           <div class="col-sm">
             <div>
               <div class="div-contato">
-                <a href="https://www.youtube.com/@VoltaRafael" target="_blank" class="text-decoration-none">
+                <a href="https://www.youtube.com/@VoltaRafael" target="_blank" class="text-decoration-none" title="YouTube">
                   <div class="d-flex">
                     <div>
                       <button type="button" class="btn btn-contato bg-gradient shadow">
@@ -402,7 +410,7 @@
                     <b class="text-black me-2">Apoio</b>
                   </div>
                   <div>
-                    <img src="assets/logo-gbp-oficial.png" alt="Logo GBP" height="48">
+                    <img src="assets/logo-gbp-oficial.png" alt="Logo GBP" height="48" loading="lazy">
                   </div>
                 </div>
               </div>
@@ -414,7 +422,7 @@
 
     <div id="btnWhatsApp" class="rounded-circle shadow d-flex align-items-center justify-content-center"
       title="Entre em Contato">
-      <a href="https://wa.me/5521981746179" target="_blank" class="text-decoration-none">
+      <a href="https://wa.me/5521981746179" target="_blank" class="text-decoration-none" title="WhatsApp">
         <i class="fa fa-whatsapp" style="font-size: 3rem; color: white;"></i>
       </a>
     </div>
